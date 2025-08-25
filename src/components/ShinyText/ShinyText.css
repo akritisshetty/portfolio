@@ -1,0 +1,28 @@
+.shiny-text-effect {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  font-size: clamp(3rem, 10vw, 6rem);
+
+  /* The Gradient Background */
+  background: linear-gradient(
+    to right,
+    var(--color-deep-blue) 20%,
+    var(--color-bright-blue) 40%,
+    var(--color-deep-blue) 60%
+  );
+  
+  /* Magic part to clip the background to the text */
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Animation */
+  animation: shine-animation 4s linear infinite;
+}
+
+@keyframes shine-animation {
+  to {
+    background-position: -200% center;
+  }
+}

@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+:root {
+  --color-cream: #FFFDD0;
+  --color-light-cream: #FFFDE7;
+  --color-bright-blue: #0089BB;
+  --color-medium-blue: #0070A9;
+  --color-deep-blue: #0A4988;
+
+  --color-background: var(--color-light-cream);
+  --color-text: var(--color-deep-blue);
+}

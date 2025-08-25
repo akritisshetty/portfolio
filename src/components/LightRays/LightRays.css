@@ -1,0 +1,15 @@
+.light-rays-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--color-background);
+  --gradient-color-1: rgba(168, 123, 90, 0.15);
+  --gradient-color-2: rgba(106, 122, 99, 0.15);
+  background-image:
+    radial-gradient(ellipse at 50% 0%, var(--gradient-color-1), transparent 70%),
+    radial-gradient(ellipse at 0% 100%, var(--gradient-color-2), transparent 70%),
+    radial-gradient(ellipse at 100% 100%, var(--gradient-color-1), transparent 70%);
+}

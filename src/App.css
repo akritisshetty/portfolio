@@ -1,0 +1,183 @@
+/* General App Styling */
+.App {
+  text-align: center;
+  /* Adding a subtle gradient background */
+  background-image: linear-gradient(to bottom, var(--color-light-cream), var(--color-cream));
+}
+
+.portfolio-header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  box-sizing: border-box;
+  min-height: 90vh;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+/* Home Section */
+.intro-subtitle {
+  font-size: 1.5rem;
+  color: var(--color-medium-blue);
+  margin-top: -1rem;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+}
+
+@media (min-width: 992px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.about-details {
+  text-align: left;
+  max-width: 650px;
+  color: var(--color-text);
+}
+
+.about-details h3 {
+  color: var(--color-deep-blue);
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+
+.about-details p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills Section */
+#skills {
+  background-color: var(--color-cream);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 900px;
+  margin-top: 2rem;
+}
+
+.skill-tag {
+  background-color: #fff;
+  color: var(--color-medium-blue);
+  border: 1px solid var(--color-bright-blue);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: var(--color-medium-blue);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 112, 169, 0.2);
+}
+
+/* Projects Section */
+#projects p {
+  max-width: 600px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(10, 73, 136, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* Important for the image */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(10, 73, 136, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h4 {
+  color: var(--color-deep-blue);
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-content a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-bright-blue);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-content a:hover {
+  color: var(--color-deep-blue);
+}
+
+/* Contact Button */
+.contact-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--color-bright-blue);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 137, 187, 0.3);
+}
+
+.contact-button:hover {
+  transform: translateY(-3px);
+  background-color: var(--color-deep-blue);
+  box-shadow: 0 7px 20px rgba(0, 137, 187, 0.4);
+}

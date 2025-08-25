@@ -1,0 +1,48 @@
+.profile-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem; /* Increased padding */
+  text-align: center;
+  max-width: 400px; /* Made the card wider */
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(10, 73, 136, 0.1);
+  border: 1px solid #fff;
+}
+
+.profile-image {
+  width: 180px; /* Made image larger */
+  height: 180px; /* Made image larger */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--color-bright-blue);
+  margin-bottom: 1.5rem;
+}
+
+.profile-name {
+  color: var(--color-deep-blue);
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem; /* Larger name font */
+}
+
+.profile-title {
+  color: var(--color-medium-blue);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.profile-links a {
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--color-medium-blue);
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.profile-links a:hover {
+  background-color: var(--color-deep-blue);
+  transform: translateY(-2px);
+}
